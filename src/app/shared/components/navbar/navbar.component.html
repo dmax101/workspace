@@ -1,0 +1,23 @@
+<div class="navbar bg-base-100">
+  <div class="flex-1 gap-4">
+    <app-drawer></app-drawer>
+    <div class="text-xl">Workspace</div>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1">
+      <li class="flex flex-row items-center">
+        <label for="theme">theme {{ currentTheme }}</label>
+        <input
+          id="theme"
+          theme
+          placeholder=""
+          theme="Theme"
+          type="checkbox"
+          class="toggle toggle-xs"
+          (click)="toggleTheme()"
+          checked
+        />
+      </li>
+    </ul>
+  </div>
+</div>
